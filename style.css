@@ -1,5 +1,30 @@
 /* Write your CSS here! */
-
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat (10, 1fr);
+}
+.header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1 / 4;
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: max-content;
+}
+.primary-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column: 1 / 4;
+  grid-row: 2 / 10;
+}
+.footer {
+  border-bottom: 15px solid yellow;
+  grid-column: 1 / 4;
+}
 /* Do not change the CSS below. */
 
 .header {
