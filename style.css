@@ -3,7 +3,6 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-column: span 2;
 }
 
 .primary-content {
