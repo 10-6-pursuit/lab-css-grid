@@ -1,5 +1,33 @@
 /* Write your CSS here! */
+.header, .primary-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+.logo{
+  grid-column: 1 / 2;
+}
+
+.menu {
+  grid-column: 2 / 4;
+}
+
+.main {
+  grid-column: 2 / 5;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  text-decoration: underline;
+}
 /* Do not change the CSS below. */
 
 .header {
