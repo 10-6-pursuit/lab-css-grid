@@ -1,4 +1,36 @@
-/* Write your CSS here! */
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, 120px);
+}
+
+.header {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu {
+  /* Didn't know if menu bar is centered or not based on img; kept it as shown but have margin auto commented in case that was the intended route */
+  margin-left: 400px;
+  /* margin: auto; */
+}
+
+.primary-content {
+  grid-column: 1;
+  grid-row: 2;
+  /* Have to divide this div into columns for correct positioning */
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.footer {
+  grid-column: 1;
+  grid-row: 3ƒ;
+}
+
 
 /* Do not change the CSS below. */
 
