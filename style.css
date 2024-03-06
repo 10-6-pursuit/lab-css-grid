@@ -4,21 +4,41 @@
 
 .header {
   background: #4242ea;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo img {
   height: 50px;
   margin: 15px 0 0 15px;
   width: auto;
+
+  
+}
+.primary-content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+.sidebar{
+grid-column: 1/2;
+}
+.main{
+  grid-column: 2/5;
+
 }
 
 .menu ul {
   padding: 0;
 }
+.joinpursuit{
+  margin-right: 700px;
+}
 
 .menu ul li {
   display: inline-block;
   padding: 15px;
+  margin-right: 20px;
 }
 
 .menu a {
