@@ -1,45 +1,64 @@
 /* Write your CSS here! */
 
 /* Do not change the CSS below. */
+body, html{
+  max-height: 100vh;
 
+}
+body {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"head head head head"
+		"aside main main main"
+		"footer footer footer footer";
+	margin: 0;
+}
 .header {
-  background: #4242ea;
+	grid-area: head;
+	background: #4242ea;
+	display: grid;
+  grid-template-columns: 300px 1fr;
 }
 
 .logo img {
-  height: 50px;
-  margin: 15px 0 0 15px;
-  width: auto;
+	height: 50px;
+	margin: 15px 0 0 15px;
+	width: auto;
 }
 
 .menu ul {
-  padding: 0;
+	padding: 0;
 }
 
 .menu ul li {
-  display: inline-block;
-  padding: 15px;
+	display: inline-block;
+	padding: 15px;
 }
 
 .menu a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .sidebar {
-  background: #2d2d2d;
-  color: white;
-  text-align: center;
+	grid-area: aside;
+	background: #2d2d2d;
+	color: white;
+	text-align: center;
 }
 
 .main {
-  background: #ececec;
-  height: 750px;
-  text-align: center;
+	grid-area: main;
+	background: #ececec;
+	height: 750px;
+	text-align: center;
 }
 
 .footer {
-  background: yellow;
-  padding: 10px;
-  text-align: center;
+	grid-area: footer;
+	background: yellow;
+	padding: 10px;
+	text-align: center;
 }
