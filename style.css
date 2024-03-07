@@ -1,5 +1,37 @@
 /* Write your CSS here! */
 
+body {
+  display: grid;
+  grid-template-rows: 9.1% 85.2% 5.7%;
+  grid-template-columns: 7.3% 17.7% 75%;
+}
+
+.header {
+  grid-row: 1;
+  grid-column: 1 / 4;
+}
+
+div.menu {
+  grid-row: 1;
+  grid-column: 3 / 4;
+}
+
+div.sidebar {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+div.main {
+  grid-column: 2 / 4; 
+  grid-row: 2;
+}
+
+.footer {
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
+
 /* Do not change the CSS below. */
 
 .header {
