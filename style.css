@@ -1,9 +1,27 @@
 /* Write your CSS here! */
+.primary-content{
+  display: flex;
+  flex-grow: 1;
+  grid-row-start:2;
+  grid-row-end: 7;
+  grid-column-start:1 ;
+  grid-column-end:11;
+}
 
+body{
+  display: grid;
+  grid-template-columns:repeat(7,200px);
+  grid-template-rows:repeat(8,100px);
+  width: 100vw;
+  height: 100vh;
+}
 /* Do not change the CSS below. */
-
 .header {
   background: #4242ea;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 11;
 }
 
 .logo img {
@@ -30,16 +48,22 @@
   background: #2d2d2d;
   color: white;
   text-align: center;
+  flex-grow: 0.1;
+  height: 800px;
 }
 
 .main {
   background: #ececec;
   height: 750px;
   text-align: center;
+  flex-grow: 1;
+  height: 800px;
 }
 
 .footer {
   background: yellow;
   padding: 10px;
   text-align: center;
+  grid-row: 10;
+  grid-column: 1/11;
 }
