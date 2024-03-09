@@ -1,27 +1,40 @@
 /* Write your CSS here! */
-.primary-content{
-  display: flex;
-  flex-grow: 1;
-  grid-row-start:2;
-  grid-row-end: 7;
-  grid-column-start:1 ;
-  grid-column-end:11;
-}
-
 body{
   display: grid;
-  grid-template-columns:repeat(7,200px);
-  grid-template-rows:repeat(8,100px);
-  width: 100vw;
-  height: 100vh;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(10,10%);
+  height: 100%;
 }
+.header{
+  grid-column:1/5;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 9.1% 90.9%;
+}
+.primary-content{
+  grid-row: 2/10;
+  grid-column: 1/span end;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(10,10%);
+}
+.sidebar{
+  grid-row: 1/span end;
+  grid-column: 1/1;
+}
+
+.main{
+  grid-column: 2/span end;
+}
+
+.menu{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
 /* Do not change the CSS below. */
 .header {
   background: #4242ea;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 11;
 }
 
 .logo img {
@@ -46,10 +59,6 @@ body{
 
 .sidebar {
   background: #2d2d2d;
-  color: white;
-  text-align: center;
-  flex-grow: 0.1;
-  height: 800px;
 }
 
 .main {
@@ -63,7 +72,6 @@ body{
 .footer {
   background: yellow;
   padding: 10px;
-  text-align: center;
   grid-row: 10;
-  grid-column: 1/11;
+  grid-column: 1/5;
 }
