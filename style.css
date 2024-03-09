@@ -1,5 +1,37 @@
 /* Write your CSS here! */
 
+body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 10%);
+}
+
+.header {
+  grid-column: 1 / end;
+
+}
+
+.footer {
+  grid-column: 1 / span end;
+  grid-row: 10 / end ;
+}
+
+.primary-content {
+  grid-row: 2 / 10;
+  grid-column: 1 / span end;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+.main {
+  grid-column: 2 / span end ;
+
+}
+
+
+
 /* Do not change the CSS below. */
 
 .header {
