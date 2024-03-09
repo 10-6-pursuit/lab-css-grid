@@ -1,4 +1,29 @@
 /* Write your CSS here! */
+body{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 10%);
+}
+.header{
+  grid-column: 1 / span end;
+  display: grid;
+  grid-template-columns:33% 66%;
+  
+}
+.footer{
+  grid-column: 1 / span end;
+  grid-row: 10 / 11;
+}
+.primary-content{
+  grid-row: 2 / 10;
+  grid-column: 1 / span end;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+}
+.main{
+  grid-column: 2 / span end;
+}
 
 /* Do not change the CSS below. */
 
@@ -10,6 +35,7 @@
   height: 50px;
   margin: 15px 0 0 15px;
   width: auto;
+
 }
 
 .menu ul {
@@ -19,6 +45,7 @@
 .menu ul li {
   display: inline-block;
   padding: 15px;
+  
 }
 
 .menu a {
@@ -30,13 +57,15 @@
   background: #2d2d2d;
   color: white;
   text-align: center;
+ 
+
 }
 
 .main {
   background: #ececec;
   height: 750px;
   text-align: center;
-}
+} 
 
 .footer {
   background: yellow;
