@@ -24,6 +24,7 @@
 .menu a {
   color: white;
   text-decoration: none;
+  /* needed change to commit it */
 }
 
 .sidebar {
