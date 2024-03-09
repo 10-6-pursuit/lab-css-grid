@@ -1,4 +1,17 @@
 /* Write your CSS here! */
+.primary-content{
+  width: 100%;
+}
+.primary-content .sidebar{
+  width: 25%;
+  height: 750px;
+  float:left
+}
+
+.primary-content .main{
+  width: 75%;
+  float:right
+}
 
 /* Do not change the CSS below. */
 
