@@ -1,5 +1,32 @@
 /* Write your CSS here! */
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 10%);
+}
 
+.header {
+  grid-column: 1 / span end;
+  display: grid;
+  grid-template-columns: 30% 69%;
+}
+
+.footer {
+  grid-column: 1 / span end;
+  grid-row: 10 / 11;
+}
+
+.primary-content {
+  grid-row: 2 / 10;
+  grid-column: 1 / span end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main {
+  grid-column: 2 / span end;
+}
 /* Do not change the CSS below. */
 
 .header {
