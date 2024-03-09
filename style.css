@@ -1,4 +1,20 @@
 /* Write your CSS here! */
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 10%);
+}
+
+.header {
+  grid-column: 1 / span end;
+}
+
+.footer {
+  grid-column: 1 / span end;
+  grid-row: 10 / 11;
+}
+
 
 /* Do not change the CSS below. */
 
