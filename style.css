@@ -4,6 +4,8 @@
 
 .header {
   background: #4242ea;
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
 
 .logo img {
@@ -42,4 +44,9 @@
   background: yellow;
   padding: 10px;
   text-align: center;
+  height: 30px;
+}
+.primary-content{
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
